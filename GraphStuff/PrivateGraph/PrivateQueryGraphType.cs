@@ -23,7 +23,8 @@ namespace hotchocolate_issue_1120.GraphStuff.PrivateGraph
         
         public static void ModifySchemaDuringBuild(ISchemaBuilder schemaBuilder)
         {
-            // TODO add "forAdminEyesOnly" to the User graph... but how?
+            // add "forAdminEyesOnly" to the User graph... but how?
+            schemaBuilder.AddType<PrivateUserGraphTypeExtension>();
         }
     }
 }

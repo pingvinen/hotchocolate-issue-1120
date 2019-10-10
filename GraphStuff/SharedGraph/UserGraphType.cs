@@ -4,12 +4,12 @@ namespace hotchocolate_issue_1120.GraphStuff.SharedGraph
 {
     public class UserGraphType : ObjectType<UserGqlOut>
     {
-        public const string Name = "User";
+        public const string GraphName = "User";
         
         protected override void Configure(IObjectTypeDescriptor<UserGqlOut> descriptor)
         {
             descriptor
-                .Name(Name)
+                .Name(GraphName)
                 .Description("A User in the platform");
             
             descriptor

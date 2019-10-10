@@ -18,7 +18,8 @@ namespace hotchocolate_issue_1120.GraphStuff.PublicGraph
 
         public static void ModifySchemaDuringBuild(ISchemaBuilder schemaBuilder)
         {
-            // TODO add "relationToMe" to the User graph... but how?
+            // add "relationToMe" to the User graph... but how?
+            schemaBuilder.AddType<PublicUserGraphTypeExtension>();
         }
     }
 }
